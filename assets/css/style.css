@@ -58,3 +58,70 @@ header h2 {
 }
 
 /* main */
+
+/* 1 section  */
+
+main .year {
+    color: #666;
+    font-family: var(--third-font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 23px;
+    /* line-height wir mussen in % rechnen */
+    letter-spacing: -0.05em;
+    text-align: left;
+
+    /* wir mussen noch ein line before hinzufügen */
+}
+
+main .h1_black {
+    color: #000;
+    font-family: var(--second-font);
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 147px;
+    /* line-height wir mussen in % rechnen */
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+main .h1_white {
+    color: white;
+    font-family: var(--second-font);
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 147px;
+    /* line-height wir mussen in % rechnen */
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+main .webisten-typ {
+    color: #666;
+    font-family: var(--third-font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+
+main .button_white a {
+    color: #000;
+    font-family: var(--first-font);
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+main .button_black a {
+    color: white;
+    font-family: var(--first-font);
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
