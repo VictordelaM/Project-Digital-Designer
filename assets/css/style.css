@@ -95,6 +95,7 @@ main .text {
 
 }
 
+
 main .nummer {
     align-self: flex-end;
     color: #9e9e9ebb;
@@ -103,9 +104,11 @@ main .nummer {
     font-size: 10rem;
     font-weight: 400;
     letter-spacing: -3.3px;
-    /* umrechnen */
+
     text-transform: uppercase;
-    margin: 10vh;
+    align-self: flex-end;
+    margin: -8vh;
+    margin-left: 60vw;
 }
 
 
@@ -117,7 +120,7 @@ main #Orbis {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 
 main #Rollr {
@@ -125,7 +128,7 @@ main #Rollr {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 
 main #Galitos {
@@ -133,7 +136,7 @@ main #Galitos {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 
 main #Tretto {
@@ -141,7 +144,7 @@ main #Tretto {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 
 main .year {
@@ -221,9 +224,15 @@ main .button_black:hover {
 
 }
 
-/* hier muss koregiert */
-main .button_black:hover~.nummer {
-    background-color: rgb(0, 0, 0);
+main .button_black:hover+.nummer {
+
+    color: black;
+
+}
+
+
+main .button_white:hover+.nummer {
+
     color: #ffffff;
 
 }
