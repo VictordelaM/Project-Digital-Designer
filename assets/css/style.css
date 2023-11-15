@@ -28,13 +28,19 @@
 
 /* ---------header-------- */
 
-
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 header .titel {
     color: #000;
     font-family: var(--third-font);
     font-size: 1.25rem;
     font-weight: 400;
+    text-align: center;
+    margin-top: 1%;
 }
 
 header h1 {
@@ -47,6 +53,12 @@ header h1 {
     /* 130px */
     letter-spacing: -2px;
     text-transform: uppercase;
+    padding: 4% 30%;
+}
+
+header img {
+    width: 40vw;
+    align-self: center;
 }
 
 header h2 {
@@ -55,6 +67,8 @@ header h2 {
     font-size: 10rem;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
+    margin: 7% 0;
 }
 
 /* main */
@@ -123,5 +137,54 @@ main .button_black a {
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer #want_more {
+    background-color: black;
+}
+
+
+footer #want_more h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--third-font);
+    font-size: 11.25rem;
+    font-weight: 400;
+    letter-spacing: -18px;
+}
+
+footer #want_more #want_more-text {
+    color: #666;
+    font-family: var(--third-font);
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 180%;
+    /* 39.6px */
+    letter-spacing: 0.22px;
+    /*umrechnen*/
+}
+
+footer #want_more #email a {
+    color: #FFF;
+    font-family: var(--third-font);
+    font-size: 3.75rem;
+    font-weight: 400;
+    letter-spacing: -3.6px;
+    /*umrechnen*/
+}
+
+
+footer #contact ul {
+    list-style: none;
+}
+
+footer #contact ul li a {
+    color: #FFF;
+    font-family: var(--third-font);
+    font-size: 3.75rem;
+    font-weight: 400;
+    letter-spacing: -3.6px;
+    /*umrechnen*/
     text-decoration: none;
 }
