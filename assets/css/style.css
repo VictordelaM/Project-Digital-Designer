@@ -109,6 +109,9 @@ main .nummer {
 }
 
 
+
+
+
 main #Orbis {
     background-image: url(../img/portfolio2.jpg);
     background-repeat: no-repeat;
@@ -163,7 +166,7 @@ main .h1-black {
     font-family: var(--second-font);
     font-size: 7rem;
     font-weight: 400;
-    x line-height: 147px;
+    line-height: 147px;
     /* line-height wir mussen in % rechnen */
     letter-spacing: 0em;
     text-align: left;
@@ -206,6 +209,25 @@ main .button_white {
     margin-top: 10vh;
 }
 
+main .button_white:hover {
+    background-color: white;
+    color: #000;
+
+}
+
+main .button_black:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+
+}
+
+/* hier muss koregiert */
+main .button_black:hover~.nummer {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+
+}
+
 
 main .button_black {
     color: black;
@@ -222,9 +244,18 @@ main .button_black {
     margin-top: 10vh;
 }
 
+/* footer start */
+
 footer #want_more {
     background-color: black;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
 }
+
+
 
 
 footer #want_more h1 {
@@ -245,6 +276,14 @@ footer #want_more #want_more-text {
     /* 39.6px */
     letter-spacing: 0.22px;
     /*umrechnen*/
+    align-self: flex-end;
+    width: 50vw;
+    margin-right: 10vw;
+}
+
+footer #want_more #email {
+    align-self: flex-end;
+    width: 60vw;
 }
 
 footer #want_more #email a {
@@ -253,20 +292,31 @@ footer #want_more #email a {
     font-size: 3.75rem;
     font-weight: 400;
     letter-spacing: -3.6px;
+    text-align: left;
     /*umrechnen*/
+    text-decoration: none;
 }
+
+
 
 
 footer #contact ul {
+    height: 150vh;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 footer #contact ul li a {
-    color: #FFF;
+    color: #000000;
     font-family: var(--third-font);
-    font-size: 3.75rem;
+    font-size: 10rem;
     font-weight: 400;
     letter-spacing: -3.6px;
     /*umrechnen*/
     text-decoration: none;
+    text-align: center;
+
 }
